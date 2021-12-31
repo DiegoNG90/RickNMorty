@@ -4,10 +4,15 @@ import { Container } from '@mui/material';
 import Loader from '../../Loader';
 import CharacterCard from '../Character';
 const CharacterList = ({ data, loading }) => {
-  // console.log(`data`, data);
+  // console.log(`loading`, loading);
 
   if (loading) {
-    <Loader />;
+    return (
+      <>
+        <h3>Lista de Personajes</h3>
+        <Loader />;
+      </>
+    );
   }
   const renderedCharacters = data?.results.map((character) => {
     return <CharacterCard key={character.id} character={character} />;

@@ -5,7 +5,7 @@ export const SET_LOADING = 'SET_LOADING';
 export const initialState = {
   data: null,
   error: null,
-  loading: false,
+  loading: true,
 };
 
 export const axiosReducer = (state = initialState, action) => {
