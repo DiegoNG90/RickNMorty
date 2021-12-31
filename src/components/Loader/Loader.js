@@ -5,8 +5,8 @@ const Loader = () => {
     <ReactSpinner
       type="TailSpin"
       color="#00BFFF"
-      height={80}
-      width={80}
+      height={150}
+      width={150}
       arialLabel="loading-indicator"
     />
   );
