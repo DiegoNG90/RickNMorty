@@ -22,7 +22,13 @@ export const useFetch = (endpoint = '') => {
   }, [endpoint]);
 
   useEffect(() => {
-    getData();
+    const timeOutID = setTimeout(() => {
+      getData();
+    }, 1000);
+
+    return () => {
+      clearTimeout(timeOutID);
+    };
   }, [endpoint, getData]);
 
   return state;

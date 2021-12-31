@@ -1,18 +1,18 @@
-import React from 'react';
-
-import { Form } from 'react-bootstrap';
-
-const SearchBar = () => {
+import React, { memo } from 'react';
+// import { Form } from 'react-bootstrap';
+import { TextField } from '@mui/material';
+const SearchBar = ({ findCharacter }) => {
   return (
-    <Form>
-      <Form.Control
+    <div className="searchBar">
+      <TextField
         className="searchBar__input"
-        size="lg"
-        type="text"
-        placeholder="Find character"
+        id="outlined-basic"
+        label="Enter a name"
+        variant="outlined"
+        onChange={findCharacter}
       />
-    </Form>
+    </div>
   );
 };
 
-export default SearchBar;
+export default memo(SearchBar);
