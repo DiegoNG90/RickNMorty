@@ -1,4 +1,15 @@
-.searchBar__input {
+.searchBar {
   margin: 3rem;
-  width: 85%;
+  display: block;
+}
+
+.searchBar__input {
+  width: 100%;
+}
+
+.characterList {
+  padding: 0px !important;
+  margin: 0px !important;
+  width: 100vw !important;
+  margin-left: 3rem !important;
 }
