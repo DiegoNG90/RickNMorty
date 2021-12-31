@@ -13,10 +13,12 @@ const CharacterList = ({ data, loading }) => {
     return <CharacterCard key={character.id} character={character} />;
   });
   return (
-    <Container className="characterList">
+    <div className="characterList">
       <h3>Lista de Personajes</h3>
-      {data?.results.length > 0 && renderedCharacters}
-    </Container>
+      <Container fluid className="characterList__cards">
+        {data?.results.length > 0 && renderedCharacters}
+      </Container>
+    </div>
   );
 };
 
