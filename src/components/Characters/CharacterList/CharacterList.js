@@ -8,17 +8,17 @@ const CharacterList = ({ data, loading }) => {
 
   if (loading) {
     return (
-      <>
+      <div data-testid="spinner">
         <h3>Lista de Personajes</h3>
         <Loader />;
-      </>
+      </div>
     );
   }
   const renderedCharacters = data?.results.map((character) => {
     return <CharacterCard key={character.id} character={character} />;
   });
   return (
-    <div className="characterList">
+    <div className="characterList" data-testid="character-container">
       <h3>Lista de Personajes</h3>
       <Container fluid className="characterList__cards">
         {data?.results.length > 0 && renderedCharacters}

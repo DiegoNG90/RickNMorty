@@ -4,6 +4,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import IconButton from '@mui/material/IconButton';
 import { styled } from '@mui/material/styles';
+import './cardactions.css';
 const Actions = ({ handleFavorite, favorite, handleExpandClick, expanded }) => {
   const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -19,11 +20,10 @@ const Actions = ({ handleFavorite, favorite, handleExpandClick, expanded }) => {
   return (
     <CardActions disableSpacing>
       <IconButton onClick={handleFavorite} aria-label="add to favorites">
-        {favorite ? (
-          <FavoriteIcon style={{ color: 'red' }} />
-        ) : (
-          <FavoriteIcon style={{ color: 'grey' }} />
-        )}
+        <FavoriteIcon
+          data-testid="favorite-icon"
+          className={favorite ? 'favorited__red' : 'unfavorited__white'}
+        />
       </IconButton>
       <IconButton aria-label="share">{/* <ShareIcon /> */}</IconButton>
       <ExpandMore
