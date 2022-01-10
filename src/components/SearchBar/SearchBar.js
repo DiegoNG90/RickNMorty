@@ -10,6 +10,9 @@ const SearchBar = ({ findCharacter }) => {
         label="Enter a name"
         variant="outlined"
         onChange={findCharacter}
+        title="searchBar"
+        type="text"
+        aria-label="searchBar"
       />
     </div>
   );
