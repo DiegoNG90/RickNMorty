@@ -25,8 +25,22 @@ const Character = ({ character }) => {
     setExpanded(!expanded);
   };
 
+  // const colors = [
+  //   '#fded36',
+  //   '#e6c92a',
+  //   '#759d44',
+  //   '#e3d3a0',
+  //   '#eaa145',
+  //   ,
+  //   '#371b0f',
+  // ];
+
   return (
-    <Card sx={{ maxWidth: 345 }} data-testid="character-card">
+    <Card
+      sx={{ maxWidth: 345 }}
+      data-testid="character-card"
+      className="character"
+    >
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -40,6 +54,7 @@ const Character = ({ character }) => {
         }
         title={character.name}
         subheader={character.species}
+        class="character__card-header"
       />
       <CardMedia
         component="img"
@@ -47,7 +62,7 @@ const Character = ({ character }) => {
         image={character.image}
         alt={character.name}
       />
-      <CardContent>
+      <CardContent className="character__card-content">
         <Typography variant="body2" color="text.secondary">
           Location: {character.location.name} <br />
           Status: {character.status}
@@ -61,7 +76,12 @@ const Character = ({ character }) => {
         expanded={expanded}
       />
 
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
+      <Collapse
+        in={expanded}
+        timeout="auto"
+        unmountOnExit
+        className="character__card-actions"
+      >
         <CardContent>
           <Typography paragraph>Useful URLS</Typography>
 

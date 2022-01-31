@@ -18,7 +18,7 @@ const Actions = ({ handleFavorite, favorite, handleExpandClick, expanded }) => {
   }));
 
   return (
-    <CardActions disableSpacing>
+    <CardActions disableSpacing className="character__card-actions">
       <IconButton onClick={handleFavorite} aria-label="add to favorites">
         <FavoriteIcon
           data-testid="favorite-icon"
