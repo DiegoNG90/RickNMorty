@@ -30,7 +30,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="main">
       <SearchBar findCharacter={findCharacter} />
       <CharacterList data={data} loading={loading} />
       <Paginator
@@ -39,7 +39,7 @@ function App() {
         activePage={activePage}
         term={term}
       />
-    </>
+    </div>
   );
 }
 

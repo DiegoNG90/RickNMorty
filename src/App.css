@@ -1,5 +1,11 @@
+.main {
+  background-image: url(../public/821532.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+}
+
 .searchBar {
-  margin: 3rem;
+  padding: 3rem;
   display: block;
 }
 
