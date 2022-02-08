@@ -54,7 +54,7 @@ const Character = ({ character }) => {
         }
         title={character.name}
         subheader={character.species}
-        class="character__card-header"
+        className="character__card-header"
       />
       <CardMedia
         component="img"
