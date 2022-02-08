@@ -1,5 +1,6 @@
 import React from 'react';
 import { Pagination } from 'react-bootstrap';
+import './paginator.css';
 
 const Paginator = ({ data, selectPage, activePage, term }) => {
   const { info } = data || [];
@@ -11,6 +12,7 @@ const Paginator = ({ data, selectPage, activePage, term }) => {
         onClick={() => selectPage(number, term)}
         key={number}
         active={number === activePage}
+        className="paginator__item"
       >
         {number}
       </Pagination.Item>
