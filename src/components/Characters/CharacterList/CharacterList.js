@@ -20,7 +20,7 @@ const CharacterList = ({ data, loading }) => {
   return (
     <div className="characterList" data-testid="character-container">
       <h3>Lista de Personajes</h3>
-      <Container fluid className="characterList__cards">
+      <Container fixed={true} className="characterList__cards">
         {data?.results.length > 0 && renderedCharacters}
       </Container>
     </div>
