@@ -3,7 +3,6 @@ import { Pagination } from 'react-bootstrap';
 
 const Paginator = ({ data, selectPage, activePage, term }) => {
   const { info } = data || [];
-  console.log(`info`, info);
 
   let items = [];
   for (let number = 1; number <= info?.pages; number++) {
@@ -20,7 +19,7 @@ const Paginator = ({ data, selectPage, activePage, term }) => {
 
   return (
     <div
-      className="d-flex  justify-content-center align-items-center"
+      className="d-flex justify-content-center align-items-center"
       style={{ marginTop: '2rem' }}
     >
       <Pagination className="d-flex flex-wrap" size="lg">
