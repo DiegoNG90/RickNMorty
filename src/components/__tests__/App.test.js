@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import App from '../App';
-import CharacterList from '../components/Characters/CharacterList';
+import App from '../../App';
+import CharacterList from '../Characters/CharacterList';
 import '@testing-library/jest-dom';
 
 describe('Lista de Personajes: Spinner, CharacterList y Character component', () => {
