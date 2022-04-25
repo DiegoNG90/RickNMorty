@@ -4,7 +4,14 @@
 Core idea here was to build an App capable of searching a target Character and their variations at Rick and Morty API but with the idea of throatiling the requests sent to the API.
 
 This is not the usual SearchBar that it's being trigger by a button or an Enter keypress inside a Form tag.
-This is being trigger directly inside an onChange -Synthetic- event, but throtatling the request on 1 second speed type.
+This is being trigger directly inside an onChange -Synthetic- event, but throattling/debouncing the request on 1 second speed type.
+
+**NEW FEAT**
+Add Pagination component related to searched Character.
+
+## Main Stack
+React JS v17
+MUI
 
 # Getting Started with Create React App
 
