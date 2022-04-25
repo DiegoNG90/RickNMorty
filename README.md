@@ -1,6 +1,7 @@
 # Rick and Morty SearchBar
 ![rickandMorty_searchBar](https://user-images.githubusercontent.com/63425447/147799551-3b36e417-2693-4970-a967-3c723d69034b.gif)
 
+
 Core idea here was to build an App capable of searching a target Character and their variations at Rick and Morty API but with the idea of throatiling the requests sent to the API.
 
 This is not the usual SearchBar that it's being trigger by a button or an Enter keypress inside a Form tag.
@@ -10,8 +11,8 @@ This is being trigger directly inside an onChange -Synthetic- event, but throatt
 Add Pagination component related to searched Character.
 
 ## Main Stack
-React JS v17
-MUI
+- React JS v17
+- MUI
 
 # Getting Started with Create React App
 
